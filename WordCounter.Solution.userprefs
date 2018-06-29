@@ -1,10 +1,10 @@
 ﻿<Properties StartupConfiguration="{45229F33-61A0-46A7-864A-B46A80659E7D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="../word-counter/WordCounter.Tests/ModelsTest/WordCountTests.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WordCounter/Models/WordCount.cs">
     <Files>
-      <File FileName="WordCounter/Models/WordCount.cs" Line="1" Column="14" />
-      <File FileName="../word-counter/WordCounter.Tests/ModelsTest/WordCountTests.cs" Line="1" Column="1" />
-      <File FileName="WordCounter.Tests/ModelTests/WordCountTests.cs" Line="17" Column="1" NotebookId="1" />
-      <File FileName="../word-counter/WordCounter/Models/WordCount.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="WordCounter/Models/WordCount.cs" Line="56" Column="9" />
+      <File FileName="../Scrabble.Solutions-approach02/Scrabble.Tests/Models.Tests/ScrabbleScorer.Tests.cs" Line="60" Column="59" />
+      <File FileName="WordCounter.Tests/ModelTests/WordCountTests.cs" Line="75" Column="1" NotebookId="1" />
+      <File FileName="../Scrabble.Solutions-approach02/Scrabble/Models/ScrabbleScorer.cs" Line="40" Column="9" NotebookId="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

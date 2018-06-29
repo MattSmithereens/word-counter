@@ -33,9 +33,7 @@ namespace WordCounter.Models
         }
 
 
-
-
-        //############ set sentence
+        //############ set sentence.  don't worry about breaking sentences up, just test word for word
 
 
         public void SetSentenceString(string newSentenceString)
@@ -48,14 +46,15 @@ namespace WordCounter.Models
             return _compareWordString;
         }
 
-        public string StringSentenceToLower(string wordString)
-        {
-            string wordLower = _compareWordString.ToLower();
-            return wordLower;
-        }
+        //############## add tolower functionality later
 
+        //public string StringSentenceToLower(string newSentenceString)
+        //{
+        //    string sentenceLower = _compareWordString.ToLower();
+        //    return sentenceLower;
+        //}
 
-
+            
         //string s = "there is a cat";
         // Split string on spaces.
         // ... This will separate all the words.
