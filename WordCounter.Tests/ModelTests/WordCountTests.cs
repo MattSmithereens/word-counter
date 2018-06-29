@@ -39,5 +39,19 @@ namespace WordCounter.Tests.ModelTests
             //Assert
             Assert.AreEqual(lowerTest, result);
         }
+
+        [TestMethod]
+        public void GetSentenceString_ReturnSentenceString_String()
+        {
+            //Arrange
+            string testString = "bang bang bang";
+            WordCount inputWord = new WordCount(testString);
+
+            //Act
+            string result = inputWord.GetWordString();
+
+            //Assert
+            Assert.AreEqual(testString, result);
+        }
     }
 }

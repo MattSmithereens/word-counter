@@ -8,7 +8,9 @@ namespace WordCounter.Models
     {
         private string _keyWordString;
         private string _compareWordString;
-        private int _keyCount = 0;
+        //private string[] compareWordArray;
+        //private int _keyCount = 0;
+
         public WordCount(string wordString = "")
         {
             _keyWordString = wordString;
@@ -29,5 +31,41 @@ namespace WordCounter.Models
             string wordLower = _keyWordString.ToLower();
             return wordLower;
         }
+
+
+
+
+        //############ set sentence
+
+
+        public void SetSentenceString(string newSentenceString)
+        {
+           _compareWordString = newSentenceString;
+        }
+
+        public string GetSentenceString()
+        {
+            return _compareWordString;
+        }
+
+        //public string StringToLower(string wordString)
+        //{
+        //    string wordLower = _compareWordString.ToLower();
+        //    return wordLower;
+        //}
+
+
+
+        //string s = "there is a cat";
+        // Split string on spaces.
+        // ... This will separate all the words.
+        //string[] words = s.Split(' ');
+        //foreach (string word in words)
+        //{
+        //    Console.WriteLine(word);
+        //}
+
+
+
     }
 }
