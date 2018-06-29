@@ -48,11 +48,11 @@ namespace WordCounter.Models
             return _compareWordString;
         }
 
-        //public string StringToLower(string wordString)
-        //{
-        //    string wordLower = _compareWordString.ToLower();
-        //    return wordLower;
-        //}
+        public string StringSentenceToLower(string wordString)
+        {
+            string wordLower = _compareWordString.ToLower();
+            return wordLower;
+        }
 
 
 
