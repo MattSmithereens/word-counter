@@ -1,5 +1,8 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using WordCounter.Models;
 
 namespace WordCounter.Tests.ModelsTest
 {
@@ -7,8 +10,17 @@ namespace WordCounter.Tests.ModelsTest
     public class WordCountTests
     {
         [TestMethod]
-        public test_result_return()
+        public void GetWordString_ReturnWordString_String()
         {
+            //Arrange
+            string testString = "cat";
+            WordCounter inputWord = new WordCounter(testString);
+
+            //Act
+            string result = inputWord.GetWordString();
+
+            //Assert
+            Assert.AreEqual(testString, result);
         }
     }
 }
