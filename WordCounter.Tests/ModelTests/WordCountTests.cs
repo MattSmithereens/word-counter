@@ -40,33 +40,35 @@ namespace WordCounter.Tests.ModelTests
             Assert.AreEqual(lowerTest, result);
         }
 
-        //[TestMethod]
-        //public void GetSentenceString_ReturnSentenceString_String()
-        //{
-        //    //Arrange
-        //    string testString = "bang bang bang";
-        //    WordCount inputWord = new WordCount(testString);
+        //############## presently failing
+        [TestMethod]
+        public void GetSentenceString_ReturnSentenceString_String()
+        {
+            //Arrange
+            string testString = "bang bang bang";
+            WordCount inputWord = new WordCount(testString);
 
-        //    //Act
-        //    string result = inputWord.GetSentenceString();
+            //Act
+            string result = inputWord.GetSentenceString();
 
-        //    //Assert
-        //    Assert.AreEqual(testString, result);
-        //}
+            //Assert
+            Assert.AreEqual(testString, result);
+        }
 
-        //[TestMethod]
-        //public void SentenceToLower_ReturnSentenceLower_String()
-        //{
-        //    //Arrange
-        //    string testString = "BANG bang";
-        //    WordCount inputWord = new WordCount(testString);
+        //############### presently failing
+        [TestMethod]
+        public void SentenceToLower_ReturnSentenceLower_String()
+        {
+            //Arrange
+            string testString = "BANG bang";
+            WordCount inputWord = new WordCount(testString);
 
-        //    //Act
-        //    string lowerTest = "bang bang";
-        //    string result = inputWord.StringSentenceToLower(testString);
+            //Act
+            string lowerTest = "bang bang";
+            string result = inputWord.StringSentenceToLower(testString);
 
-        //    //Assert
-        //    Assert.AreEqual(lowerTest, result);
-        //}
+            //Assert
+            Assert.AreEqual(lowerTest, result);
+        }
     }
 }
