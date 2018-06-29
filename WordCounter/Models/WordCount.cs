@@ -6,7 +6,9 @@ namespace WordCounter.Models
 {
     public class WordCount
     {
-        public WordCount()
+        private string _keyWordString;
+        private string _compareWordString;
+        private int _keyCount = 0;
         {
         }
     }
