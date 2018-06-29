@@ -10,17 +10,25 @@ namespace WordCounter.Tests.ModelsTest
     public class WordCountTests
     {
         [TestMethod]
-        public void GetWordString_ReturnWordString_String()
+        public void IsLeapYear_NumberDivisibleByFour_True()
         {
-            //Arrange
-            string testString = "cat";
-            WordCounter inputWord = new WordCounter(testString);
-
-            //Act
-            string result = inputWord.GetWordString();
-
-            //Assert
-            Assert.AreEqual(testString, result);
+            // eventually your testing code will go here
         }
+
+
+
+        //[TestMethod]
+        //public void GetWordString_ReturnWordString_String()
+        //{
+        //    //Arrange
+        //    string testString = "cat";
+        //    WordCounter inputWord = new WordCounter(testString);
+
+        //    //Act
+        //    string result = inputWord.GetWordString();
+
+        //    //Assert
+        //    Assert.AreEqual(testString, result);
+        //}
     }
 }

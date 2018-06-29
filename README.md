@@ -14,6 +14,8 @@ A program that checks how frequently a word appears in a given string. The progr
 | :-------------     | :------------- | :------------- |
 | **Program stores the inputted key word and an inputted string to be compared**|  "bang" "bang" |  |
 | **Program stores the inputted string to compare and checks string for instance of inputted key word**| "bang" "chitty chitty bang bang" | keyword (**bang**) present = true  |
+| **Program converts both key and comparative strings to lower to avoid case sensitivity**|  "BANG" "bang" | "**bang**" == "**bang**" |
+| **Program recognizes punctuation and does not match**|  "were" "we're" | "**were**" =//= "**we're**" |
 | **Program disregards and does not tally words that contain the keyword addended or otherwise different from inputted form of keyword**| "bang" "she bangs" | keyword (**bang**) =//= (**bangs**) |
 | **Program does not tally anagrams as occurences of the key word**| "beard" "bread" | keyword (**beard**) present = true |
 | **Program continues to the end of the string after encountering an initial instance of the key word and records all separate subsequent instances**| "chitty chitty bang bang" | keyword "**bang**" = "**bang**, **bang**" |
