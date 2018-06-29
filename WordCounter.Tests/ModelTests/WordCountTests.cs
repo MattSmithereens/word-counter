@@ -14,7 +14,7 @@ namespace WordCounter.Tests.ModelTests
         public void GetWordString_ReturnWordString_String()
         {
             //Arrange
-            string testString = "cat";
+            string testString = "bang";
             WordCount inputWord = new WordCount(testString);
 
             //Act
@@ -22,6 +22,22 @@ namespace WordCounter.Tests.ModelTests
 
             //Assert
             Assert.AreEqual(testString, result);
+        }
+
+        [TestMethod]
+        public void StringToLower_ReturnStringLower_String()
+        {
+            //Arrange
+            string testString = "BANG";
+            WordCount inputWord = new WordCount(testString);
+
+            //Act
+            string lowerTest = "bang";
+            string result = inputWord.StringToLower(testString);
+
+
+            //Assert
+            Assert.AreEqual(lowerTest, result);
         }
     }
 }
